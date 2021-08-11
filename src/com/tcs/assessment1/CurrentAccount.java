@@ -10,15 +10,17 @@ public class CurrentAccount {
 	private Date createDate;
 	private TYPE1 type;
 	private STATUS status;
+	private float overdraftBalance;
 	
 	
-	public CurrentAccount(float balance, String ownerName, Date createDate, TYPE1 type, STATUS status) {
+	public CurrentAccount(float balance, String ownerName, Date createDate, TYPE1 type, STATUS status, float overdraftBalance) {
 		super();
 		this.balance = balance;
 		this.ownerName = ownerName;
 		this.createDate = createDate;
 		this.type = type;
 		this.status = status;
+		this.overdraftBalance= overdraftBalance;
 	}
 
 
@@ -45,6 +47,11 @@ public class CurrentAccount {
 	public STATUS getStatus() {
 		return status;
 	}
+	
+	public float getOverdraftBalance() {
+		return overdraftBalance;
+	}
+
 	
 	
 	
